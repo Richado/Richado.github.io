@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Your todo</title>
+        <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
+        <link rel="stylesheet" href="./CSS/Pure-release-0.6.0/pure-min.css">
+        <style>
+            body {
+                background: lightblue;          /* 背景色   */
+                margin:0px;                     /* 外边距   */
+                border:0px;                     /* 边框     */
+                border-style: solid;            /* 边框样式 */
+                padding:15px;                    /* 内边距   */
+                font-family: Microsoft YaHei;   /* 字体     */
+                font-size: 22px;                /* 字体大小 */
+                text-align: center;             /* 对齐     */
+            }
+                /* 完成的样式 */
+            .done {
+                color: gray;
+                text-decoration: line-through;
+            }
+
+            .todo-form {
+                position: relative;
+                width: 350px;
+                left: 25px;
+                top: 55px;
+                margin: 0px;
+            }
+            button {
+                margin-top: 6px;
+                width: 240px;
+            }
+            .button-small {
+                font-size: 30%;
+                width: 100px;
+            }
+            .button-error {
+                background: rgb(202, 60, 60); /* this is a maroon */
+            }
+            #id-input-todo {
+                display: block;
+                width: 100%;
+                height: 113px;
+                border-radius: 10px;
+                border-style: solid;
+                border-width: 2px;
+                font-size: 19px;
+                resize: none;
+                padding: 10px;
+                outline: none;
+            }
+
+            #Layer1 {
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                z-index: 1;
+                background-color: #795548;
+                border: 1px none #000000;
+                left: 450px;
+                top: 0;
+            }
+
+            #id-div-container {
+                position: relative;
+                left: 475px;
+                background: white;
+                width: 435px;
+                border-radius: 5px;
+                top: -280px;
+                padding: 10px;
+            }
+            .todo-cell-button {
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="todo-main">
+            <!-- todo 输入框 -->
+            <div class="todo-form">
+                <!-- <input id='id-input-todo' type="text"> -->
+                <textarea id="id-input-todo" placeholder="Please input todo..."></textarea>
+                <br>
+                <button class="pure-button" id="id-button-add" type="button">Add</button>
+                <!-- <br> -->
+                <!-- <button class="pure-button pure-button-primary" id='id-button-add2' type="button">Add Completele</button> -->
+                <br>
+                <button class="pure-button button-error" id='id-button-deleteAll' type="button">Delete Completele</button>
+            </div>
+
+            <div id="Layer1" style=""></div>
+
+            <!-- todo 列表 -->
+            <div id="id-div-container">
+                <!-- <div class='todo-cell'>
+                    <button class='todo-done'>完成</button>
+                    <button class='todo-delete'>删除</button>
+                    <button class='todo-edit'>编辑</button>
+                    <span contenteditable='true'>上课</span>
+                </div> -->
+            </div>
+        </div>
+        <script src="todo.js" charset="utf-8"></script>
+    </body>
+</html>
