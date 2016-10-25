@@ -212,13 +212,17 @@
             'http://a3.topitme.com/b/6d/2b/11214342371722b6dbo.jpg',
         ]
 
-        $('.imgs1').on('click', function() {
+        $('.imgs1').on('click', function(event) {
             $('.imgs-container').remove()
             GuaSlide('body', images1)
+            $('.mybutton').removeClass('pure-button-primary')
+            $(event.target).addClass('pure-button-primary')
         })
-        $('.imgs2').on('click', function() {
+        $('.imgs2').on('click', function(event) {
             $('.imgs-container').remove()
             GuaSlide('body', images2)
+            $('.mybutton').removeClass('pure-button-primary')
+            $(event.target).addClass('pure-button-primary')
         })
         </script>
     </body>
