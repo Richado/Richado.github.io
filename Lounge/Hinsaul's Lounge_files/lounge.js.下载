@@ -133,7 +133,7 @@ var insertComForm = function() {
         <div class="divsion"></div>
         <div class="allComments">
             <div class="comment-i">
-                <img class="comment-img-head" src="profilePic/grape.jpg" alt=head/>
+                <img class="comment-img-head" src="Lounge/profilePic/grape.jpg" alt=head/>
                 <div class="comment-content">
                     <span>Hinsaul :</span>
                     <span>嗨，欢迎来到我的聊天室 ~</span>
@@ -141,7 +141,7 @@ var insertComForm = function() {
                 </div>
             </div>
             <div class="comment-i">
-                <img class="comment-img-head" src="profilePic/map.jpg" alt=head/>
+                <img class="comment-img-head" src="Lounge/profilePic/map.jpg" alt=head/>
                 <div class="comment-content">
                     <span>Luffy :</span>
                     <span>我可是要成为海贼王的男人！</span>

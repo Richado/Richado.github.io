@@ -5,7 +5,7 @@ var log = function() {
 var templete = function(actions, index) {
     var t = ''
     $(actions).each(function(i, e) {
-        var path = 'profilePic/' + e
+        var path = 'Lounge/profilePic/' + e
     var head = `<img class="img-head" src=${path} alt=/>`
     t += head
     })
